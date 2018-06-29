@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>{$book_name}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="__CSS__/book_style.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="context">
+            <div class="introduction">
+                <img src="{$image_url}">
+                <div>
+                    <h2>{$book_name}</h2>
+                    <p class="lead">{$introduction}</p>
+                    <p>{$author} {$publishing} {$publishing_time}</p>
+                    <h2>{$price}￥</h2>
+                    <button class="btn btn-default">查看更多</button>
+                </div>
+            </div>
+            <div class="detailed">
+                <h3>编者推荐</h3><hr>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;{$editors_choice}</p>
+                <br/>
+                <h3>内容介绍</h3><hr>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;{$content_validity}</p>
+                <br/>
+                <h3>关于作者</h3><hr>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;{$about_author}</p>
+                <br/>
+                <h3>目录</h3><hr>
+                <p>{$catalog}</p>
+                <br/>
+                <h3>媒体评论</h3><hr>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;{$media_reviews}</p>
+                
+            </div>
+        </div>
+    </body>
+</html>
